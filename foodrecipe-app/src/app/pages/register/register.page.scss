@@ -1,0 +1,77 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+ion-button[color="dark"]{
+    text-transform: initial;
+
+}
+
+ion-content {
+    --background: linear-gradient( #900000, #FF8D0F);
+     
+}
+ion-header{
+    --background: linear-gradient(#900000, #FF8D0F);
+}
+
+.toolbar2{
+    --background: linear-gradient( #900000, #FF8D0F);
+    
+}
+
+
+.loginlogo{
+    width: 150px;
+    margin-left: 22%;
+    margin-top: 10%;
+   
+}
+
+
+
+.button1{
+        --background: #ff8e04;
+        --background-hover: #19f084;
+        --background-activated: #8c8c01;
+        --background-focused: #88f4be;
+      
+        --color: rgb(249, 248, 248);
+      
+        --border-radius: 50px;
+        --border-color: #f3e8e8;
+        --border-style: solid;
+        --border-width: 2px;
+      
+        --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+      
+        --ripple-color: deeppink;
+      
+        --padding-top: 10px;
+        --padding-bottom: 10px;
+}
+
+.button2{
+    --background: #ff8e04;
+    --background-hover: #19f084;
+    --background-activated: #8c8c01;
+    --background-focused: #88f4be;
+  
+    --color: rgb(249, 248, 248);
+  
+    --border-radius: 50px;
+    --border-color: #f3e8e8;
+    --border-style: solid;
+    --border-width: 2px;
+  
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  
+    --ripple-color: deeppink;
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
+

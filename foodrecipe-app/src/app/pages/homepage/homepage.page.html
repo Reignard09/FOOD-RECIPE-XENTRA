@@ -1,0 +1,168 @@
+<ion-header>
+  <ion-toolbar class="toolbar1" color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button title="" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="dark">FOOD RECIPES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="c1">
+    <ion-card *ngFor="let type of accountTypes" color="warning" >
+      <h6  (click)="type('Kaldereta')"><b>{{type.name}}</b></h6>
+      <div>
+ <!--      <ion-button>button</ion-button>-->  
+        {{type.description}}
+      </div>
+    </ion-card>
+  </ion-card>
+</ion-content>
+<!--<ion-content>
+  <ion-card >
+    <ion-card class="c1">
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.seriouseats.com/thmb/Ahvi-dWu-9xjE7iFsOlBxHtaONU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__20110114-goatstewcebu-primary_2-e88cf43a217b441581d6dfa2d345ca3f.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1" (click)="kaldereta()" > <h2> KALDERETA </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a2">
+        <img src="https://www.seriouseats.com/thmb/qshKE_N-Tejch9AJ87JrwFbb7RU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__10__20191023-chicken-adobo-vicky-wasik-21-1500x1125-4768e6b6199f4309b38f5cc9df648362.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1" (click)="chickenadobo()"> <h2> CHICKEN ADOBO </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.seriouseats.com/thmb/y7LT27c_pN8KkGYFKOV_xb3-cFU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Beauty_-3315bbf2ab0443b5b75ab906c4ebb5d4.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1" (click)="karekare()"> <h2> KARE-KARE </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.seriouseats.com/thmb/HtMo_biCcw8-S9D9cWVSX92QycY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__02__20190122-souffle-omelet-vicky-wasik-15-5ed05b436c2c41668fe2c6cff4f783e0.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1" (click)="omelette()"> <h2> OMELETTE </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.seriouseats.com/thmb/PhVZXIhmqKJi2TeiRYj9-4XvDZY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__03__20200330-canned-clams-pasta-sho-spaeth-1-5791318645d944f1974741d03006df2c.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1" (click)="spaghetti()"> <h6>Spaghetti With Canned-Clam Sauce </h6></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.caltrain.com/files/images/2021-09/default.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1"> <h2> RECIPE 6 </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.caltrain.com/files/images/2021-09/default.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1"> <h2> RECIPE 7 </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.caltrain.com/files/images/2021-09/default.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1"> <h2> RECIPE 8 </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.caltrain.com/files/images/2021-09/default.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1"> <h2> RECIPE 9 </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.caltrain.com/files/images/2021-09/default.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1"> <h2> RECIPE 10 </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.caltrain.com/files/images/2021-09/default.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1"> <h2> RECIPE 11 </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.caltrain.com/files/images/2021-09/default.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1"> <h2> RECIPE 12 </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+    <ion-card >
+      <ion-item color="warning">
+      <ion-avatar slot="start" class="a1">
+        <img src="https://www.caltrain.com/files/images/2021-09/default.jpg">
+      </ion-avatar>
+      <ion-label>
+          <ion-button color="dark" fill="clear" class="b1"> <h2> RECIPE 13 </h2></ion-button>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+</ion-card> -->
+<!--</ion-content>-->
+
