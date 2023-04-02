@@ -9,7 +9,6 @@ img{
     margin-top: 50px;
 }
 
-
 ion-button[color="dark"]{
     text-transform: initial;
 
@@ -17,7 +16,7 @@ ion-button[color="dark"]{
 }
 
 ion-content {
-    --background: linear-gradient(#900000, #FF8D0F);
+    --background:  #ffecbc;
 }
 
 .loginlogo{
@@ -25,6 +24,10 @@ ion-content {
     margin-left: 22%;
     margin-top: 10%;
    
+}
+
+img{
+    margin-top: -50px;
 }
 
 
@@ -70,3 +73,77 @@ ion-content {
     --padding-bottom: 10px;
 }
 
+ion-toolbar{
+    --opacity: .2
+}
+
+ion-header{
+    --opacity: .2
+}
+
+ion-card{
+    border-radius : 25px;
+    //--background: # ;
+    width: 500px;
+   height: 450px;
+}
+ion-input{
+  margin-top: -25px;
+}
+
+.bg{
+position: absolute;
+  top: 100%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+ion-text{
+    font-size: 35px;
+    font-style: 40px;
+}
+
+.h1{
+    font-size: 11px;
+    margin-left: 180px;
+}
+
+.h2{
+--background: #ff8e04;
+--background-activated: #f9b25a;
+--background-hover: #f9b25a;
+width: 200px;
+height: 36px;
+margin-top: 20px;
+margin-left: 50px;
+}
+
+.h3{
+width: 200px;
+height: 36px;
+margin-top: 10px;
+margin-left: 50px;
+}
+
+.custom-shape-divider-bottom-1680466127 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1680466127 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 300px;
+}
+
+.custom-shape-divider-bottom-1680466127 .shape-fill {
+    fill: #FFFFFF;
+}
