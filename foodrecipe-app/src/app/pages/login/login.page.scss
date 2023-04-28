@@ -17,12 +17,15 @@ ion-button[color="dark"]{
 
 ion-content {
     --background:  #ffecbc;
+   
+    
 }
 
 .loginlogo{
     width: 150px;
     margin-left: 22%;
     margin-top: 10%;
+    
    
 }
 
@@ -30,6 +33,11 @@ img{
     margin-top: -50px;
 }
 
+ion-item{
+    width: 270px;
+    font-size: 12px;
+   
+}
 
 .button1{
         --background: #ff8e04;
@@ -81,15 +89,26 @@ ion-header{
     --opacity: .2
 }
 
-ion-card{
-    border-radius : 25px;
-    //--background: # ;
-    width: 500px;
+.c1{
+margin-top: 20px;
+margin-left: auto;
+width: 290px;
+height: 300px;
+
+}
+
+.card1{
+   border-radius : 25px;
+   //--background: #ffca6a;
+   width: 400px;
    height: 400px;
+   margin-top: 180px;
+  
 }
 
 ion-input{
   margin-top: -25px;
+
 }
 
 .bg{
@@ -102,25 +121,30 @@ position: absolute;
   -ms-transform: translate(-50%,-50%);
 }
 
-ion-text{
-    font-size: 35px;
-    font-style: 40px;
+//ion-text{
+//    font-size: 35px;
+//    font-style: 40px;
+//    margin-left: 20px;
+//    margin-bottom: 20px;
     
-}
+//}
 
-.h1{
+.forgot-password{
     font-size: 11px;
-    margin-left: 180px;
+    margin-left: 170px;
+    font-style: italic;
+
 }
 
-.h2{
+.login-button{
 //--background: #ff8e04;
 //--background-activated: #f9b25a;
 //--background-hover: #f9b25a;
+  
     width: 200px;
     height: 36px;
-    margin-top: 20px;
-    margin-left: 50px;
+    //margin-top: 50px;
+    //margin-left: -250px;
     --background: #ffca6a;  //ffca6a
     --background-hover: #9ce0be;
     --background-activated: #7e5c41;
@@ -234,3 +258,28 @@ ion-text{
         height: 188px;
     }
 }
+
+.title{
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Sigmar', cursive;
+}
+
+.login-input{
+    margin-left: 40px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.error-message{
+    margin-left: 80px;
+    color:red;
+    font-size: small;
+}
+
+.value-holder{
+    margin-top: 20px;
+}
+

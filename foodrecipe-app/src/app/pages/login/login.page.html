@@ -4,44 +4,99 @@
         <ion-back-button title="" color="light"></ion-back-button>
       </ion-buttons>
     </ion-toolbar>
-  </ion-header>
+</ion-header>
 
-  <ion-content [fullscreen]="true" class="ion-padding">
+  
+<ion-content [fullscreen]="true" class="ion-padding">
+  <form [formGroup]="loginForm">
   <div class="flex-center">
+
+  <!-- BACKGROUND COLOR DESIGN -->
     <div class="custom-shape-divider-top-1680468362">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
       </svg>
-  </div>
+    </div>
+
+  <!-- BACKGROUND PHOTO AND LOGO -->
     <img alt="bg" src="assets/veg-bg.png" class="bg" color="warning"/>
     <img alt="LoginLogo" src="assets/logo2.png" class="loginlogo"/>
   
-    <ion-card >
+    <ion-card class="card1">
       <div class="custom-shape-divider-bottom-1680471157">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
         </svg>
     </div>
-     <!-- <img alt="LoginLogo" src="assets/LOGIN1.png"  class="loginlogo"/> --> 
-    <ion-card-content>
+    
+    <div class="title">
+        <ion-text color="dark" >LOGIN</ion-text>  
+    </div>
+    
+      <div class="value-holder"> 
       
-      <ion-text color="dark" >Login</ion-text>
-      <ion-item>
-        <ion-label position="floating" >Email</ion-label>
-        <ion-input type="email"></ion-input>
-      </ion-item>
+       
+ 
+            <div>
+             <!-- <ion-card-content>-->
+
+                <ion-item>
+                  <ion-input type="text" placeholder="Email" class="login-input" formControlName="email" (keyup)="validateEmail($event)"> </ion-input>
+                </ion-item>
+                <span class="error-message" style="width: 100%" *ngIf="f.email.invalid && (f.email.touched || f.email.dirty) ">Please enter valid email</span>
+
+                <ion-item class="2">
+                  <ion-input type="password" placeholder="Password" class="login-input" formControlName="password" (keyup)="validateField()" autocomplete="off"> </ion-input>
+                </ion-item>
+                <span class="error-message" style="width:100%" *ngIf="f.password.invalid && (f.password.touched || f.password.dirty)">Please enter valid password</span>
+
+             <!--</ion-card-content> --> 
+              <!--<ion-label position="floating">Password</ion-label>-->
+            </div>
+            
+   
+        
+       
+        <ion-button color="dark" fill="clear" class="forgot-password"> Forgot Password?</ion-button>
+        
+        <div style="display: flex; align-items: center; justify-content: center;"> 
+        <ion-button shape="round"  (click)="login()" class="login-button">Login</ion-button>
+          <!--<input type="checkbox" id="vehicle3" name="remember" value="" style="color: #F79802;">
+          <label for="remember" style="color:#F79802; margin-left: .5rem;"> Remember Me</label>-->
+          </div>
+          </div>
+         
+      
+      
+
+      
+    
+ 
+        <!--  <ion-label position="floating" >Email</ion-label>
+          <ion-input type="text" placeholder="Email" class="login-input" formControlName="email" (keyup)="validateEmail($event)"></ion-input>
+          <span class="error-message" style="width:100%" *ngIf="f.email.invalid && (f.email.touched || f.email.dirty) ">Please enter valid email</span>
+
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" placeholder="Password" class="login-input" formControlName="password" (keyup)="validateField()" autocomplete="off">
+            <span class="error-message" style="width:100%" *ngIf="f.password.invalid && (f.password.touched || f.password.dirty)">Please enter valid password</span>
+        <ion-input type="email"></ion-input>-->
+      
+      
+    <!--
       <ion-item>
         <ion-label position="floating">Password</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
-      <ion-button color="dark" fill="clear" class="h1"> Forgot Password?</ion-button>
-      <ion-button shape="round"  (click)="login()" class="h2" >Login</ion-button>
-      <ion-button shape="round"  (click)="register()" class="h3"> Sign up</ion-button>
-      </ion-card-content>
-
       
+       <ion-button shape="round"  (click)="login()" class="h2" >Login</ion-button>
+      <ion-button shape="round"  (click)="register()" class="h3"> Sign up</ion-button>-->
+  
     </ion-card>
+<ion-content>
+      
+      
+    
    
-  </div>
 
-</ion-content>
+
+
